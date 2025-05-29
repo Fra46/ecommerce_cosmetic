@@ -1,11 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cosméticos - Beauty Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-icons span {
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            color: white;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            background-color: white;
+            color: #c44569;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Product Categories */
+        .categories {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .category-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Navigation Categories */
+        .nav-categories {
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-categories h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover {
+            background: #ff6b9d;
+            color: white;
+        }
+
+        /* Brand Section */
+        .brand-section {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            color: #ff6b9d;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ff6b9d;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+        }
+
+        .footer-section li:hover {
+            color: #ff6b9d;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+            
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .nav-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">🌸 Beauty</div>
+            <div class="nav-icons">
+                <span>🔍</span>
+                <span>❤️</span>
+                <span>🛒</span>
+                <span>👤</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>DESCUBRE TU BELLEZA</h1>
+        <p>Los mejores productos de belleza ahora a tu alcance</p>
+        <button class="cta-button">COMPRA AHORA</button>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-icon">💄</div>
+                <h3>LABIOS</h3>
+                <p>Labiales, gloss y más</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">✨</div>
+                <h3>ILUMINADOR</h3>
+                <p>Destacadores y brillos</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">👁️</div>
+                <h3>PESTAÑAS</h3>
+                <p>Máscaras y extensiones</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Categories -->
+    <section class="nav-categories">
+        <h2>NAVEGAR POR CATEGORÍA</h2>
+        <div class="nav-grid">
+            <div class="nav-item">MAQUILLAJE</div>
+            <div class="nav-item">ACCESORIOS</div>
+            <div class="nav-item">BROCHAS</div>
+        </div>
+
+        <h2>MARCAS VENDIDAS</h2>
+        <div class="brand-section">
+            <div class="brand-name">JMAL</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Categorías</h3>
+                <ul>
+                    <li>Maquillaje</li>
+                    <li>Cuidado de la piel</li>
+                    <li>Fragancias</li>
+                    <li>Accesorios</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ayuda</h3>
+                <ul>
+                    <li>Centro de ayuda</li>
+                    <li>Contactanos</li>
+                    <li>Envíos</li>
+                    <li>Devoluciones</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Cuenta</h3>
+                <ul>
+                    <li>Mi cuenta</li>
+                    <li>Pedidos</li>
+                    <li>Lista de deseos</li>
+                    <li>Recompensas</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
