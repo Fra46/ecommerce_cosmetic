@@ -1,34 +1,152 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | JMAL Cosméticos</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (opcional, para íconos) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Favicon (Opcional) -->
+    <!-- <link rel="icon" href="ecommerce_cosmetic/imagenes/favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Artesanías</a>
-        <div class="collapse navbar-collapse">
+        <a class="navbar-brand" href="index.html">JMAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de Nosotras</a></li>
                 <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="compras.html">Compras</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compras.html">
+                        Carrito
+                        <span class="badge bg-danger rounded-pill ms-1 d-none" id="contador-carrito-nav">0</span>
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<div class="container mt-5">
-    <h3>Contáctanos</h3>
-    <p><strong>Teléfono:</strong> +57 300 123 4567</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/573001234567" target="_blank">Chatear</a></p>
-    <p><strong>Correo:</strong> contacto@artesaniascolombia.com</p>
-    <p><strong>Dirección:</strong> Calle 45 # 12-34, Valledupar, Cesar, Colombia</p>
-    <iframe src="https://maps.google.com/maps?q=Valledupar&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<!-- Contenido Principal de Contacto -->
+<div class="container mt-4">
+    <header class="text-center mb-5">
+        <h1>Ponte en Contacto</h1>
+        <p class="lead">¡Nos encantaría saber de ti! Escríbenos o visítanos.</p>
+    </header>
+
+    <div class="row">
+        <!-- Información de Contacto -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body contact-info">
+                    <h3 class="card-title text-pink-accent mb-4"><i class="bi bi-person-lines-fill me-2"></i>Información General</h3>
+                    <p><strong><i class="bi bi-envelope-fill me-2 text-pink-main"></i>Correo Electrónico:</strong> <a href="mailto:contacto@jmalcosmeticos.com">contacto@jmalcosmeticos.com</a> (Ejemplo)</p>
+                    <p><strong><i class="bi bi-telephone-fill me-2 text-pink-main"></i>Teléfono Principal:</strong> <a href="tel:+573001234567">+57 300 123 4567</a> (Ejemplo)</p>
+                    <p><strong><i class="bi bi-geo-alt-fill me-2 text-pink-main"></i>Dirección:</strong> Calle Falsa 123, Centro, Valledupar, Cesar (Ejemplo)</p>
+                    <hr>
+                    <h4 class="mt-4 mb-3 text-pink-accent"><i class="bi bi-people-fill me-2"></i>Nuestro Equipo</h4>
+                    <p>Puedes contactar directamente a nuestros representantes:</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Jesús Carvajal:</strong> <a href="tel:+573043430868">+57 304 343 0868</a></li>
+                        <li><strong>María García:</strong> <a href="tel:+573042974189">+57 304 297 4189</a></li>
+                        <li><strong>Andrés Zapata:</strong> <a href="tel:+573136569828">+57 313 656 9828</a></li>
+                        <li><strong>Marlon Martínez:</strong> <a href="tel:+573196548831">+57 319 654 8831</a></li>
+                        <li><strong>Lorena:</strong> <a href="tel:+573115255211">+57 311 525 5211</a></li>
+                    </ul>
+                     <p class="mt-3"><strong><i class="bi bi-whatsapp me-2 text-pink-main"></i>WhatsApp General:</strong> <a href="https://wa.me/573001234567" target="_blank">Chatea con Nosotras</a> (Ejemplo)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                     <h3 class="card-title text-pink-accent mb-3"><i class="bi bi-map-fill me-2"></i>Encuéntranos</h3>
+                    <div class="map-container">
+                        <!-- IMPORTANTE: Reemplaza el src con el iframe de Google Maps de la ubicación real de JMAL -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62615.90701932928!2d-73.29349664970703!3d10.463140086197057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab0c518519973%3A0x35a3ae550299093b!2sValledupar%2C%20Cesar!5e0!3m2!1ses!2sco!4v1678886412345!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de Contacto (Opcional - requiere backend para funcionar) -->
+    <section class="mt-4 py-4 bg-pink-light rounded">
+        <div class="container text-center">
+            <h3>¿Tienes Alguna Duda? ¡Escríbenos!</h3>
+            <p class="mb-4">Completa el formulario y te responderemos a la brevedad.</p>
+            <form id="contactForm" class="col-md-8 mx-auto">
+                <div class="mb-3">
+                    <label for="contactName" class="form-label visually-hidden">Nombre</label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Tu Nombre Completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contactEmail" class="form-label visually-hidden">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="contactEmail" placeholder="Tu Correo Electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contactSubject" class="form-label visually-hidden">Asunto</label>
+                    <input type="text" class="form-control" id="contactSubject" placeholder="Asunto">
+                </div>
+                <div class="mb-3">
+                    <label for="contactMessage" class="form-label visually-hidden">Mensaje</label>
+                    <textarea class="form-control" id="contactMessage" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">
+                    <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
 </div>
-<footer>© 2025 Artesanías Colombia</footer>
+
+<!-- Contenedor para Notificaciones Toast (global) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="notificaciones-toast" style="z-index: 1055">
+    <!-- Los toasts se insertarán aquí mediante JavaScript -->
+</div>
+
+<!-- Pie de Página -->
+<footer>
+    <p>© 2025 JMAL Cosméticos. Todos los derechos reservados.</p>
+    <p>Valledupar, Cesar, Colombia</p>
+</footer>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js" defer></script>
+<script>
+    // Script simple para manejar el envío del formulario de contacto (solo frontend)
+    // Para una funcionalidad real, necesitarías un backend.
+    const contactForm = document.getElementById('contactForm');
+    if(contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el envío real del formulario
+            const name = document.getElementById('contactName').value;
+            // Aquí llamarías a la función de notificaciones de script.js
+            // Asumiendo que mostrarNotificacion está disponible globalmente (lo está si script.js se carga)
+            if (typeof mostrarNotificacion === 'function') {
+                mostrarNotificacion(`Gracias por tu mensaje, ${name}. Nos pondremos en contacto pronto. (Simulación)`, 'success', 5000);
+            } else {
+                alert(`Gracias por tu mensaje, ${name}. Nos pondremos en contacto pronto. (Simulación)`);
+            }
+            this.reset(); // Limpiar el formulario
+        });
+    }
+</script>
 </body>
 </html>
