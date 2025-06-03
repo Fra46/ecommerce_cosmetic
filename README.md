@@ -1,7 +1,7 @@
 # ✨ JMAL Cosméticos - Tienda Online de Belleza Femenina ✨
 
 <p align="center">
-  <img src="imagenes/logo01.png" alt="JMAL Cosméticos Banner" width="15%"/>
+  <img src="imagenes/logo01.png" alt="JMAL Cosméticos Banner" width="25%"/>
 </p>
 
 ¡Bienvenida a JMAL Cosméticos! Una elegante y moderna tienda en línea dedicada a ofrecer productos de belleza de alta calidad para realzar la belleza única de cada mujer. Este proyecto es un sitio web de comercio electrónico completamente funcional construido con HTML5, CSS3 y JavaScript puro, utilizando el framework Bootstrap 5 para un diseño responsivo y atractivo.
