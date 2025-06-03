@@ -59,25 +59,6 @@
 
 ---
 
-## 📁 Estructura del Proyecto
-
-
-ecommerce_cosmetic/
-├── index.html             # Página de inicio
-├── productos.html         # Página de catálogo de productos
-├── compras.html           # Página del carrito de compras
-├── acerca.html            # Página "Acerca de Nosotras"
-├── contacto.html          # Página de contacto
-├── styles.css             # Hoja de estilos principal personalizada
-├── script.js              # Lógica principal de la aplicación (productos, carrito, etc.)
-└── imagenes/              # Carpeta para todas las imágenes del sitio
-├── banner1.jpg        # (Ejemplo de imagen para el carrusel)
-├── labial_rosa_pasion.jpg # (Ejemplo de imagen de producto)
-└── ...                # (Más imágenes de productos, banners, etc.)
-
-
----
-
 ## 🏁 Cómo Empezar (Desarrollo Local)
 
 Sigue estos pasos para ejecutar el proyecto en tu máquina local:
@@ -141,13 +122,6 @@ Este proyecto fue desarrollado con la colaboración de:
 * Andrés Zapata
 * Marlon Martínez
 * Lorena
-
----
-
-## 📜 Licencia
-
-Este proyecto es para fines demostrativos y educativos.
-**(Opcional: Si decides usar una licencia específica, menciónala aquí. Ej: "Distribuido bajo la Licencia MIT. Ver `LICENSE.md` para más información.")**
 
 ---
 
