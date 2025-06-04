@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Nosotros | JMAL Cosméticos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon (Opcional) -->
+    <!-- <link rel="icon" href="ecommerce_cosmetic/imagenes/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+
+<!-- Barra de Navegación -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">JMAL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="acerca.html">Acerca de Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="compras.html">
+                        Carrito
+                        <span class="badge bg-danger rounded-pill ms-1 d-none" id="contador-carrito-nav">0</span>
+                    </a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contenido Principal de "Acerca de Nosotras" -->
+<div class="container mt-4">
+    <header class="text-center mb-5">
+        <h1>Conoce a JMAL Cosméticos</h1>
+        <p class="lead">Apasionadas por la belleza, comprometidas contigo.</p>
+    </header>
+
+    <section class="about-section mb-5 p-4 bg-pink-light">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Nuestra Misión</h2>
+                <p>En JMAL, nos dedicamos a realzar la belleza única de cada mujer, ofreciendo productos cosméticos innovadores y de alta calidad que inspiran confianza y celebran la individualidad. Buscamos ser cómplices en tu rutina de belleza, brindándote herramientas para expresarte y sentirte radiante cada día.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <!-- Reemplaza 'mision_imagen.jpg' con una imagen tuya en ecommerce_cosmetic/imagenes/ -->
+                <img src="ecommerce_cosmetic/imagenes/mision_imagen.jpg" class="img-fluid rounded shadow-sm" alt="Mujer aplicando maquillaje JMAL" onerror="this.onerror=null;this.src='https://placehold.co/500x350/FADADD/333?text=Nuestra+Misión';">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section mb-5 p-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <h2>Nuestra Visión</h2>
+                <p>Ser la marca de belleza líder y de mayor confianza en el mercado, reconocida por nuestra excelencia, compromiso con la satisfacción del cliente y por fomentar una comunidad donde la belleza se vive como una forma de empoderamiento y autoexpresión.</p>
+            </div>
+            <div class="col-md-6 order-md-1 text-center">
+                 <!-- Reemplaza 'vision_imagen.jpg' con una imagen tuya en ecommerce_cosmetic/imagenes/ -->
+                <img src="ecommerce_cosmetic/imagenes/vision_imagen.jpg" class="img-fluid rounded shadow-sm" alt="Productos JMAL en exhibición" onerror="this.onerror=null;this.src='https://placehold.co/500x350/F8C8DC/FFF?text=Nuestra+Visión';">
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section text-center mb-5 p-4 bg-pink-light">
+        <h2>Nuestro Equipo</h2>
+        <p class="lead mb-4">Conoce a las personas detrás de JMAL Cosméticos.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <ul class="list-unstyled">
+                    <li class="team-member"><strong>Jesús Carvajal</strong></li>
+                    <li class="team-member"><strong>María García</strong></li>
+                    <li class="team-member"><strong>Andrés Zapata</strong></li>
+                    <li class="team-member"><strong>Marlon Martínez</strong></li>
+                    <li class="team-member"><strong>Lorena Yepes</strong></li>
+                </ul>
+                <p class="mt-3"><em>¡Trabajamos con pasión para ofrecerte lo mejor!</em></p>
+            </div>
+             <!-- Opcional: Imagen del equipo -->
+            <!--
+            <div class="col-md-4 text-center mt-3 mt-md-0">
+                <img src="ecommerce_cosmetic/imagenes/equipo_jmal.jpg" class="img-fluid rounded-circle shadow" alt="Equipo JMAL" onerror="this.onerror=null;this.src='https://placehold.co/300x300/FFB6C1/333?text=Equipo+JMAL';">
+            </div>
+            -->
+        </div>
+    </section>
+</div>
+
+<!-- Contenedor para Notificaciones Toast (global) -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" id="notificaciones-toast" style="z-index: 1055">
+    <!-- Los toasts se insertarán aquí mediante JavaScript -->
+</div>
+
+<!-- Pie de Página -->
+<footer>
+    <p>© 2025 JMAL Cosméticos. Todos los derechos reservados.</p>
+    <p>Valledupar, Cesar, Colombia</p>
+</footer>
+
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js" defer></script>
+</body>
+</html>

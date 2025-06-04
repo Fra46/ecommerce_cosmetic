@@ -1,0 +1,246 @@
+/* Estilos Generales JMAL */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+  background-color: #fff; /* Fondo blanco principal */
+  color: #555; /* Color de texto principal */
+  line-height: 1.6;
+}
+
+/* Barra de Navegación */
+.navbar {
+  background-color: #F8C8DC !important; /* Rosa claro principal para la barra */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #FADADD; /* Borde sutil */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff !important; /* Texto blanco para el nombre de la marca */
+  font-size: 1.8em;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important; /* Texto blanco para los enlaces */
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FF85A2 !important; /* Rosa más intenso para hover y activo */
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: #E170A2; /* Rosa más oscuro para encabezados */
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+}
+
+/* Contenedores y Secciones */
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Carrusel */
+.carousel-item img {
+  max-height: 450px; /* Altura ajustada para banners de belleza */
+  object-fit: cover;
+  border-radius: 8px; /* Bordes redondeados suaves */
+}
+.carousel-caption {
+    background-color: rgba(248, 200, 220, 0.7); /* Fondo rosa claro semitransparente */
+    color: #333;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+/* Tarjetas de Productos */
+.card {
+  border: 1px solid #FADADD; /* Borde rosa muy claro */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(225, 112, 162, 0.15); /* Sombra suave al pasar el mouse */
+}
+
+.card img {
+  max-height: 250px; /* Altura para imágenes de producto */
+  object-fit: contain; /* Para que se vea bien el producto */
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #D16094; /* Rosa más intenso para títulos de producto */
+  font-size: 1.25em;
+}
+
+.card-text {
+  font-size: 0.95em;
+  color: #666;
+}
+
+.card-text.fw-bold { /* Precio */
+  color: #E170A2;
+  font-size: 1.2em;
+}
+
+/* Botones */
+.btn {
+  border-radius: 20px; /* Botones más redondeados */
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #FF85A2; /* Rosa más intenso para botones primarios */
+  border-color: #FF85A2;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #E170A2; /* Un tono más oscuro al pasar el mouse */
+  border-color: #E170A2;
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background-color: #5cb85c; /* Verde para éxito (pagar) */
+  border-color: #5cb85c;
+  color: white;
+}
+.btn-success:hover {
+  background-color: #4cae4c;
+  border-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background-color: #d9534f; /* Rojo para peligro (eliminar/vaciar) */
+  border-color: #d9534f;
+  color: white;
+}
+.btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #c9302c;
+  transform: translateY(-2px);
+}
+
+
+/* Formularios (para página de contacto y cantidad de producto) */
+.form-control {
+  border-radius: 20px; /* Campos de formulario redondeados */
+  border: 1px solid #FADADD;
+  padding: 10px 15px;
+}
+
+.form-control:focus {
+  border-color: #FF85A2;
+  box-shadow: 0 0 0 0.2rem rgba(255, 133, 162, 0.25);
+}
+
+/* Tabla de Compras */
+.table {
+    background-color: #fff;
+    border: 1px solid #FADADD;
+}
+.table thead.table-dark th { /* Cabecera de la tabla */
+    background-color: #E170A2; /* Rosa oscuro para la cabecera de la tabla */
+    color: white;
+    border-color: #D16094;
+}
+.table tbody tr:hover {
+    background-color: #FFF0F5; /* Rosa muy pálido para hover en filas */
+}
+.table td, .table th {
+    vertical-align: middle;
+}
+.table img {
+    max-width: 60px;
+    border-radius: 4px;
+}
+
+
+/* Pie de Página */
+footer {
+  background-color: #333; /* Fondo oscuro para contraste */
+  color: #f0f0f0; /* Texto claro */
+  padding: 25px 0;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+}
+
+/* Clases de utilidad adicionales */
+.text-pink-main {
+  color: #F8C8DC;
+}
+.text-pink-accent {
+  color: #FF85A2;
+}
+.bg-pink-light {
+  background-color: #FFF0F5; /* Un rosa muy muy claro para fondos de sección si es necesario */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos para la página de contacto */
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+.contact-info strong {
+    color: #E170A2;
+}
+.contact-info a {
+    color: #FF85A2;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
+.map-container iframe {
+    border-radius: 8px;
+    border: 1px solid #FADADD;
+}
+
+/* Estilos para la página Acerca de */
+.about-section img {
+    border-radius: 8px;
+    margin-top: 20px;
+}
+.team-member {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.team-member strong {
+    color: #E170A2;
+}
