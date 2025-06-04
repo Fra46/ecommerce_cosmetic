@@ -20,17 +20,6 @@
 
 ---
 
-## 📸 Vistazo Rápido
-
-**(Opcional: Añade screenshots de tu sitio. Puedes subirlas a tu repo en una carpeta `docs/screenshots` por ejemplo)**
-
-| Página de Inicio                                      | Página de Productos                                     | Carrito de Compras                                   |
-| :----------------------------------------------------: | :-----------------------------------------------------: | :--------------------------------------------------: |
-| `[Screenshot de la Página de Inicio]`                 | `[Screenshot de la Página de Productos]`                | `[Screenshot del Carrito de Compras]`                |
-| *Bienvenida y carrusel de novedades.* | *Catálogo detallado de nuestros productos de belleza.* | *Revisa y gestiona tu selección antes de comprar.* |
-
----
-
 ## 🎯 Características Principales
 
 * 💄 **Catálogo de Productos Dinámico:** Visualiza una variedad de cosméticos con descripciones, precios e imágenes.
