@@ -12,14 +12,6 @@
 
 ---
 
-## 🚀 Demo en Vivo
-
-**(Opcional: Si tienes el sitio desplegado, añade el enlace aquí)**
-
-➡️ **Visita JMAL Cosméticos en Acción:** `[Enlace a tu Demo en Vivo]`
-
----
-
 ## 🎯 Características Principales
 
 * 💄 **Catálogo de Productos Dinámico:** Visualiza una variedad de cosméticos con descripciones, precios e imágenes.
